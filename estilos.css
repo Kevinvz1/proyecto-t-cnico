@@ -1,0 +1,101 @@
+body {
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.form-card {
+    background: #fff;
+    padding: 22px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(44, 62, 80, 0.10);
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+    border: 1px solid #dde6ed;
+    animation: fadeIn 0.7s;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1976d2;
+    font-weight: 700;
+    font-size: 23px;
+    letter-spacing: 0.5px;
+}
+.form-group {
+    margin-bottom: 14px;
+    animation: slideUp 0.5s;
+}
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #3a3a3a;
+    font-size: 15px;
+    font-weight: 500;
+}
+input, select {
+    width: 100%;
+    padding: 9px 12px;
+    border-radius: 6px;
+    border: 1px solid #b6c6d7;
+    font-size: 15px;
+    background: #f7fbff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+input:focus, select:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 0 2px #e3f2fd;
+}
+button {
+    width: 100%;
+    padding: 11px;
+    background: linear-gradient(90deg, #1976d2 70%, #90caf9 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    transition: background 0.2s, transform 0.2s;
+}
+button.btn-animate:hover {
+    background: linear-gradient(90deg, #1565c0 70%, #64b5f6 100%);
+    transform: scale(1.03);
+}
+.mensaje-exito {
+    margin-top: 16px;
+    padding: 12px;
+    background: #e3fcec;
+    color: #256029;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.05);
+    animation: fadeIn 0.7s;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.97);}
+    to { opacity: 1; transform: scale(1);}
+}
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+.animate-fade-in {
+    animation: fadeIn 0.7s;
+}
+.animate-slide-down {
+    animation: slideUp 0.5s;
+}
